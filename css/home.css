@@ -365,7 +365,8 @@ body{font-size: 14px;font-family: '微软雅黑';background: url('../img/spirit_
 	position: relative;
 	width: 100%;
 	/*background: #333;*/
-	background: url('../img/spirit_ground.jpg') fixed no-repeat center center;
+	background: url('https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/spirit_ground.jpg') fixed no-repeat center center;
+	/*background: url('../img/spirit_ground.jpg') fixed no-repeat center center;*/
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
