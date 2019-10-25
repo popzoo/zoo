@@ -361,7 +361,7 @@ body{font-size: 14px;font-family: '微软雅黑';background: url('../img/spirit_
 /*==============================泡泡特效样式============================*/
 /*=====================================================================*/
 /* Header */
-.large-header {
+#large-header {
 	position: relative;
 	width: 100%;
 	/*background: #333;*/
