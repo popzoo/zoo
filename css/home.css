@@ -288,8 +288,8 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 /* 大小不定元素垂直居中 */
 .dib_vm{display:inline-block; width:0; height:100%; vertical-align:middle;}
 /* 加载中背景图片 - 如果您使用该CSS小库，务必修改此图片地址 */
-/*.loading{background:url(about:blank) no-repeat center;}*/
-.loading{background:url('https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/spirit_ground.jpg') fixed no-repeat center center;}
+.loading{background:url('https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/spirit_ground.jpg') fixed repeat-y center center;}
+/*.loading{background:url('https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/spirit_ground.jpg') no-repeat 0% fixed; }*/
 /* 无框文本框文本域 */
 .bd_none{border:0; outline:none;}
 /* 绝对定位隐藏 */
@@ -309,8 +309,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .inline_fix{display:inline-block; width:100%; height:0; overflow:hidden;}
 
 
-/*body{font-size: 14px;font-family: '微软雅黑';background-color: rgb(247,247,247);height:100%;}*/
-body{font-size: 14px;font-family: '微软雅黑';background: url('../img/spirit_ground.jpg') fixed no-repeat center center;height:100%;}
+body{font-size: 14px;font-family: '微软雅黑';background-color: mistyrose;height:100%;}
 .w1000{width:80%;margin:0 auto;}
 .header.contrainer{height:60px;line-height: 60px;background-color: rgba(53,53,53,0.7);}
 .header a{display:block;text-decoration: none;text-align: center;font-size: 26px;font-weight: 400;color:gold;}
