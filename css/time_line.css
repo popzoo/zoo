@@ -1,6 +1,6 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+ abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -288,7 +288,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 /* 大小不定元素垂直居中 */
 .dib_vm{display:inline-block; width:0; height:100%; vertical-align:middle;}
 /* 加载中背景图片 - 如果您使用该CSS小库，务必修改此图片地址 */
-.loading{background:url('https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/spirit_ground.jpg') fixed repeat-y center center;}
+.loading{background:url('https://rawcdn.githack.com/popzoo/zoo/7c486ebfa3f21eb5dc032ce5449c4a161d180619/img/spirit_ground.jpg') fixed repeat-y center center;}
 /*.loading{background:url('https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/spirit_ground.jpg') no-repeat 0% fixed; }*/
 /* 无框文本框文本域 */
 .bd_none{border:0; outline:none;}
@@ -311,10 +311,10 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 
 body{font-size: 14px;font-family: '微软雅黑';background-color: mistyrose;height:100%;}
 .w1000{width:80%;margin:0 auto;}
-.header.contrainer{height:60px;line-height: 60px;background-color: rgba(53,53,53,0.7);}
-.header a{display:block;text-decoration: none;text-align: center;font-size: 26px;font-weight: 400;color:gold;}
+.header{display:block;text-decoration: none;text-align: center;font-size: 26px;font-weight: 400;height:60px;line-height: 60px;background-color: rgba(53,53,53,0.7);border-radius: 6px;}
 .body{line-height: 40px;}
 .body .header{font-size: 30px;margin: 50px 0 50px;font-weight: 600;}
+.statcss {text-align: center;line-height: 28px; width: 600px; font-size: 16px;color:orange;background-color: rgba(53,53,53,0.7);border-radius: 5px;margin: 0 auto;margin-bottom: 10px;}
 .event_wrap{position:relative;}
 .event_wrap .middle_line{position:absolute;left:50%;top:0;width:8px;margin-left: -3px;border-left: 6px solid #000;height:100%;}
 .event_wrap .middle_line i{display:block;height:3.31%;border-bottom: 1px solid #000;width:60%;}
