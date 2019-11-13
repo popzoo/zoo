@@ -19,7 +19,8 @@
 		<ul class='clearfix'>
 			<!-- <li class='float_six'><a href="javascript:;">首页</a></li> -->
 			<li class='float_six'><a href="https://popzoo.github.io/zoo/" style="color:gold;">时光轴</a></li>
-			<li class='float_six'><a href="javascript:alert('功能还待开发');" style="color:gold;">火力房</a></li>
+			<li class='float_six'><a href="https://popzoo.github.io/pop/fireroom.html" style="color:gold;">火力房</a></li>
+			<!-- <li class='float_six'><a href="javascript:alert('功能还待开发');" style="color:gold;">火力房</a></li> -->
 			<li class='float_six'><a href="https://popzoo.github.io/barrage/" style="color:gold;">云弹幕</a></li>
 			<li class='float_six'><a href="https://popzoo.github.io/pop/giftshow.html" style="color:gold;">礼物秀</a></li>
 			<li class='float_six'><a href="https://popzoo.github.io/pop/motorcade.html" style="color:gold;">车队展</a></li>
@@ -46,27 +47,27 @@
 <script src='js/jquery.eventFlow.js'></script>
 <script type="text/javascript" src="https://robot.ownthink.com/bot/js/robot.js"></script>
 <script>
-$(function(){
+$(function(){//，，极速
 	var bigEvent =[
 	{
 	'year' : '下拉',
 	'events' :[
 	{
 		'months' : 3,
-		'times' :'天心月圆',
-		'even' :'等待着为生活而披着星茫'
+		'times' :'睥睨水友',
+		'even' :'满级粉丝牌子-有撒~'
 	},{
 		'months' : 3,
-		'times' :'华枝春满',
-		'even' :'等待着为事业而挂着月霜'		
+		'times' :'笑傲鱼塘',
+		'even' :'幻神弹幕特效-有撒~'		
 	},{
 		'months' : 8,
-		'times' :'归于平淡',
-		'even' :'等待着为爱情而迎风破浪'
+		'times' :'鲸吞万象',
+		'even' :'签到手速王-全都有撒'
 	},{
 		'months' : 8,
-		'times' :'绚烂之极',
-		'even' :'等待着为理想而披荆斩棘'	
+		'times' :'火力横扫',
+		'even' :'顶级车队logo-有撒~'	
 	}]},
 	{
 	'year':"起点",
@@ -305,17 +306,45 @@ $(function(){
 		'times' :'V0.6.0',
 		'even' :'新增天威幻神和年度神豪动态弹幕logo，新增房管图标，增加弹幕负载均衡，过滤AI白话，修复聊天bug'
 	},{
-		'months' : 5,
+		'months' : 4,
 		'times' :'V0.6.1',
 		'even' :'增加cdn加速云弹幕接口，由于之前访问github接口太过于频繁，被github限制接口访问速度，用cdn来提速'	
 	},{
-		'months' : 8,
+		'months' : 6,
 		'times' :'V0.6.2',
-		'even' :'……待定……'	
+		'even' :'去除谢礼弹幕，感谢自己的情况，修改车队签到为非聚焦模式Tab打开，修改@icon的cdn缓存，增设@icon64位图标'	
 	},{
-		'months' : 11,
+		'months' : 8,
 		'times' :'V0.6.3',
-		'even' :'……待定……'					
+		'even' :'增加主播礼物收益显示，增加直播间弹幕数量统计，修改房间真实人数API接口,修改直播累计时长为主播开播时间点'	
+	},{
+		'months' : 10,
+		'times' :'V0.6.4',
+		'even' :'优化时间显示日期，增加隐藏功能自动跳转前可以取关，去除遮挡按钮功能的三个斗鱼广告，增加火力分享'							
+	}]},
+	{
+	'year' : "迭代",
+	'events' :[
+	{
+		'months' : 2,
+		'times' :'V0.6.5',
+		'even' :'紧急修复二合一自动跳转不停止bug,修复快速签到第一次打开不响应的bug,签到轮询改为依据网络访问速度的队列任务'
+	},{
+		'months' : 4,
+		'times' :'V0.6.6',
+		'even' :'修复因斗鱼升级导致的火力全开跳转接口失效问题，修复无手机绑定时鱼塘自动领鱼粮，出现无限弹窗的bug，修改fireinfo的持久化机制'	
+	},{
+		'months' : 6,
+		'times' :'V0.6.7',
+		'even' :'修复二合一功能超过火力等待时间不自动跳转的问题，清除每日跳转次数的历史数据，新增加火力等待和跳转上限用户自定义参数'	
+	},{
+		'months' : 8,
+		'times' :'V0.6.8',
+		'even' :'限制机器人回答的长度范围，避免成为百科问答式回答，修改自定义参数礼物答谢和自动取关的功能密码'	
+	},{
+		'months' : 10,
+		'times' :'V0.6.9',
+		'even' :'……待定……'							
 	}]},		
 	{
 	'year' : '未来',
