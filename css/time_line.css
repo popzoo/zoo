@@ -313,7 +313,7 @@ body{font-size: 14px;font-family: '微软雅黑';background-color: mistyrose;hei
 .w1000{width:80%;margin:0 auto;}
 .header{display:block;text-decoration: none;text-align: center;font-size: 26px;font-weight: 400;height:60px;line-height: 60px;background-color: rgba(53,53,53,0.7);border-radius: 6px;}
 .body{line-height: 40px;}
-.body .header{font-size: 30px;margin: 50px 0 50px;font-weight: 600;}
+.body .header{font-size: 30px;margin: 10px 0 20px;font-weight: 600;}
 .statcss {text-align: center;line-height: 28px; width: 600px; font-size: 16px;color:orange;background-color: rgba(53,53,53,0.7);border-radius: 5px;margin: 0 auto;margin-bottom: 10px;}
 .event_wrap{position:relative;}
 .event_wrap .middle_line{position:absolute;left:50%;top:0;width:8px;margin-left: -3px;border-left: 6px solid #000;height:100%;}
