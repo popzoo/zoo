@@ -27,8 +27,7 @@
 			<li class='float_six'><a href="https://greasyfork.org/zh-CN/scripts/389379" style="color:gold;text-decoration:none;">GreaseFork</a></li>
 		</ul>
 	</div>
-
-	<div style="text-align: left; max-width: 900px; margin: 0 auto 0;padding: 0 30px; background-color: rgba(235,235,235,0.7);border-radius: 10px;">
+	<div id="control_show_manual" style="text-align: left; max-width: 900px; margin: 0 auto 0;padding: 0 30px; background-color: rgba(235,235,235,0.7);border-radius: 10px;display:none;">
       <h1 style="font-size:22pt; line-height:150%; margin:17pt 0pt 16.5pt; padding-top: 15px;orphans:0; page-break-after:avoid; page-break-inside:avoid; text-align:center; widows:0">
         <span style="font-family:等线; font-size:22pt; font-weight:bold">火力AI脚本隐藏功能</span></h1>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0">
@@ -197,7 +196,7 @@
           <span style="font-family:等线; font-size:12pt">1>上面的功能配置全都是存储在浏览器的localStorage中，只在当前浏览器的一个用户账号起作用，如果用户换电脑，换浏览器，或换账号则都需要重新配置;</span>
         </li>
         <li style="font-family:等线; font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 14pt; orphans:0; padding-left:4pt; text-align:justify; text-indent:0pt; widows:0">
-          <span style="font-family:等线; font-size:12pt">2>弹幕发送时间间隔暂时不支持用户自定义，暂时不支持用户手动自定义发送时间，自动算法是根据自己的弹幕间隔数和当前房间热度自动计算。</span></li>
+          <span style="font-family:等线; font-size:12pt">2>弹幕发送时间间隔暂时不支持用户自定义，自动算法是根据自己的弹幕间隔数和当前房间热度自动计算。幻神弹幕暂时不支持用户配置取消，如大家有类似需求，可以邮件或QQ@我。人多话就搞下哈！</span></li>
           <br/>
       </ol>
     </div>
@@ -209,5 +208,25 @@
 	<canvas id="demo-canvas" style="position:fixed ;bottom: 10px; z-index:-1;"></canvas>
 </div>
 <script src="js/spirit_bubble.js"></script>
+<script type="text/javascript">
+    window.onload = showHiddenManual();
+    function showHiddenManual(){
+        let validate = sessionStorage.getItem("personalDanmu");
+        if(validate==="true"){
+            let showManual = document.getElementById("control_show_manual");
+            if(showManual!=undefined){
+                showManual.setAttribute("display","inline");
+            }else{
+                delayLoad();
+            }
+        }else{
+            alert("请登录昵称验证后才能开启隐藏教程！");
+            window.location.href = "https://popzoo.github.io/zoo/hiddenFlower.html";
+        }  
+    }  
+    function delayLoad(){
+        setTimeout(showHiddenManual,1000);
+    }
+</script>
 </body>
 </html>
