@@ -30,7 +30,7 @@
 	<div class="w1000 tc body" >
 		<p style="font-size: 34px;font-weight: 600;color: blue;margin-top: 20px;">时光轴的记忆</p>
 		<h3 class='header' style="font-size: 28px; background-color: rgba(53,53,53,0);">大人的慷慨打赏，作者的孜孜矻矻！</h3>
-    	<table style="margin: 0 auto 0;"><tr>
+    	<table id="qr_code_pic" style="margin: 0 auto 0;display: none;"><tr>
     	    <td><img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/Alipay.png" width="60%"></td>
     	    <td></td>
     	    <td><img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/WeChat.png" width="60%"></td>
@@ -55,7 +55,7 @@
 $(function(){//极速 	#FFBBFF
 	var bigEvent =[
 	{
-	'year' : '捐助',
+	'year' : '<div onclick="showQRCode()" style="color:lime;">捐助</div>',
 	'events' :[
 	{
 		'months' : 2,
@@ -84,7 +84,7 @@ $(function(){//极速 	#FFBBFF
 	}]},
 	{
 	// 'year' : '<a href="https://popzoo.github.io/zoo/hiddenManual.html" target="_blank" style="color:magenta;">点赞</a>',
-	'year' : '<a href="https://popzoo.github.io/zoo/hiddenFlower.html" target="_blank" style="color:#FF83FA;">点赞</a>',
+	'year' : '<a href="https://popzoo.github.io/zoo/hiddenFlower.html" target="_blank" style="color:#BF3EFF;">点赞</a>',
 	'events' :[
 	{
 		'months' : 3,
@@ -399,22 +399,46 @@ $(function(){//极速 	#FFBBFF
 		'months' : 10,
 		'times' :'V0.6.9',
 		'even' :'新增自定义云弹幕功能，上传自己专属的云弹幕，文件名与斗鱼昵称一致，格式为json'							
+	}]},
+	{
+	'year' : "更新",
+	'events' :[
+	{
+		'months' : 2,
+		'times' :'V0.7.0',
+		'even' :'优化自动取关功能，白嫖抢丸子跑路不关注功能优化了，带牌粉丝牌的房间默认不取关，特殊关注的房间默认不取关'
+	},{
+		'months' : 4,
+		'times' :'V0.7.1',
+		'even' :'修复因斗鱼升级导致车队无法自动签到,昵称更新,弹幕和过滤网络节点优化，更新机制优化，清除localstorage延迟'	
+	},{
+		'months' : 6,
+		'times' :'V0.7.2',
+		'even' :'去除了自定义弹幕配置中需要设置AI过滤的配置列表参数'	
+	},{
+		'months' : 8,
+		'times' :'V0.7.3',
+		'even' :'……未来可期……'	
+	},{
+		'months' : 10,
+		'times' :'V0.7.4',
+		'even' :'……翘首以待……'							
 	}]},		
 	{
-	'year' : '除恶',
+	'year' : '<a href="https://popzoo.github.io/zoo/hiddenFlower.html" target="_blank" style="color:#EE3B3B;">除恶</a>',
 	'events' :[
 	{
 		'months' : 3,
 		'times' :'不忘初心',
-		'even' :'⚡⚡⚡⚡⚡⚡地瘴灭魔⚡⚡⚡⚡⚡⚡'
+		'even' :'💣💣💣💣💣💣地瘴灭魔💣💣💣💣💣💣'
 	},{
 		'months' : 3,
 		'times' :'扫黑除恶',
 		'even' :'⚡⚡⚡⚡⚡⚡天雷诛邪⚡⚡⚡⚡⚡⚡'		
 	},{
 		'months' : 8,
-		'times' :'<span style="color:red;">楼底镇压大恶人-武林恶名[到此一游**]</sapn>',
-		'even' :'<span style="color:#EE3B3B;">抄袭偶的弹幕文案，用偶的脚本，还反咬一口，这种无赖大恶人，必须镇压九幽冥火之地狱，焚魂灼魄！</sapn>'
+		'times' :'<span style="color:red;">楼底镇压大恶人-武林恶名[乔木**]</sapn>',
+		'even' :'<span style="color:#EE3B3B;">白嫖偶的脚本，还多次侮辱作者大大，这种无赖大恶人，必须镇压九幽冥火之地狱，焚魂灼魄！</sapn>'
 	},{
 		'months' : 8,
 		'times' :'<span style="color:red;">楼底镇压大恶人-江湖臭名[有事别找我**]</span>',
@@ -423,8 +447,14 @@ $(function(){//极速 	#FFBBFF
 	]}];
 	$('.event_wrap').eventFlow({'events':bigEvent});
 })
-
+	function showQRCode(){
+		let QRCodeObject= document.getElementById("qr_code_pic");
+		if(QRCodeObject!=undefined){
+			QRCodeObject.style.display = "inherit";
+		}
+	}	
 </script>
-
+<script type="text/javascript">
+</script>
 </body>
 </html>
