@@ -28,11 +28,14 @@
 		</ul>
 	</div>
 
-	<div style="text-align: left; max-width: 900px; margin: 0 auto 0;padding: 0 30px; background-color: rgba(235,235,235,0.7);border-radius: 10px;">
+	<div style="text-align: left; max-width: 900px; margin: 0 auto 0;padding: 0 30px; background-color: rgba(235,235,235,0.8);border-radius: 10px;">
       <h1 style="font-size:22pt; line-height:150%; margin:17pt 0pt 16.5pt;padding-top: 15px; page-break-after:avoid; page-break-inside:avoid; text-align:center; widows:0">
         <span style="font-family:等线; font-size:22pt; font-weight:bold">自定义私有云弹幕教程</span></h1>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
-        <span style="font-family:等线; font-size:14pt; font-weight:bold;">应水友的强烈要求和吐槽(大都吐槽AI机器人太沙雕萌新)之下，且云弹幕库内容太过陈旧内容有限(目前火力脚本采用AI智能聊天+云弹幕库混用)，所以增加了自定义私有云弹幕功能。这里采用JSON格式的文本弹幕，优点是轻量级、易编辑、速度快，文本限制小于5MB(只要会用word的小白按照步骤都可以配置成功)，需要注意的是此云弹幕需要配合<a href="https://greasyfork.org/zh-CN/scripts/389379" target="_blank">斗鱼自动搜火力脚本</a>版本号0.6.9以上才支持。</span></p>
+        <span style="font-family:等线; font-size:14pt; font-weight:bold;">应水友的强烈要求和吐槽(大都吐槽AI机器人太沙雕萌新)之下，且云弹幕库内容太过陈旧内容有限(目前火力脚本采用AI智能聊天+云弹幕库混用)，所以增加了自定义私有云弹幕功能。这里采用JSON格式的文本弹幕，优点是轻量级、易编辑、速度快，文本大小限制小于5MB(只要会用word的小白按照步骤都可以配置成功)，需要注意的是此云弹幕需要配合<a href="https://greasyfork.org/zh-CN/scripts/389379" target="_blank">斗鱼自动搜火力脚本</a>版本号0.6.9以上才支持。</span></p>
+      <p style="font-size:14pt; line-height:150%; margin:0pt; text-indent:21pt;">
+          <span style="font-family:等线; font-size:13pt; font-weight:normal;">下面这段话主要给不了解json的小白解释的，JSON格式主要以格式中的{}(大括号)，[](中括号)，：(冒号)，""(引号)，和,(逗号)都要用英文半角输入，否则会报错，每个双引号内为一条弹幕内容，在双引号内的的符号(比如"主播好美，么么哒！")的符号，您可以随便用中文的各种符号如逗号，叹号等，如果不懂也不要紧，大家把上面的模板下载下来，然后直接按下面的说明，改双引号里面的弹幕内容就OK了。文档说明中有些可以为空的字段，是指键值对(如下图json头中键值"msg"(键):"ok"(值))都省略掉(也可以都填写内容)，而不是只保留键，值为空(类似这种"msg":[""]或干脆没有"msg":)，如果这还不懂，可以自行百度了解下。</span>
+      </p>        
       <ol type="1" style="margin:0pt; padding-left:0pt">
         <li style="font-family:等线; font-size:12pt; font-weight:bold; line-height:150%; margin:0pt 0pt 0pt 14pt; orphans:0; padding-left:4pt; text-align:justify; text-indent:0pt; widows:0">
           <span style="font-family:等线; font-size:12pt; font-weight:bold">1. 首先去下面链接下载云弹幕定制模板，文件内容见下面图片</span></li>
@@ -43,7 +46,7 @@
           <span style="color:#0563c1; font-family:等线; font-size:12pt; font-weight:bold; text-decoration:underline">https://cdn.statically.io/gh/popzoo/barrage/master/json/template.json</span></a>
       </p>
       <p style="font-size:12pt; line-height:150%; margin-left: 24px; orphans:0; text-align:justify; widows:0">
-        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_1.png" width="550" height="366" alt="" /></p>
+        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_1.png"/></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
         <span style="font-family:等线; font-size:12pt; font-weight:bold">Ctrl+S保存到本地为json文件格式。也可以下载目前公用的云弹幕，不过体积较大，而且需要格式化</span>
         <a style="color:#0563c1" href="https://cdn.statically.io/gh/popzoo/barrage/master/danmu.json">
@@ -68,9 +71,9 @@
       <p style="margin:3.75pt 0pt; text-indent:16pt;">
         <span style="font-family:Tahoma; font-size:11pt">"data": {</span></p>
       <p style="margin:3.75pt 0pt; text-indent:48pt">
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">-------------------------------------</span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">普通精选区</span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">-------------------------------------</span></p>        
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">---------------------------------</span>
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">普通精选区(内容不可为空)</span>
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">---------------------------------</span></p>        
       <p style="margin:3.75pt 0pt; text-indent:48pt">
         <span style="font-family:Tahoma; font-size:11pt">"通用": ["我又回来了","打卡签到","感谢大家的小礼物"],</span>
       </p>
@@ -78,9 +81,9 @@
         <span style="font-family:Tahoma; font-size:11pt">"精选": ["一见倾心点关注，两眼沉沦送礼物", "来的潇洒走得酷，点点关注不迷路"],</span>
       </p>
       <p style="margin:3.75pt 0pt; text-indent:48pt">
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">-------------------------------------</span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">二级标题区</span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">-------------------------------------</span></p>
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">---------------------------------</span>
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">房间类别区(字段可以为空)</span>
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">---------------------------------</span></p>
       <p style="margin:3.75pt 0pt; text-indent:48pt">
         <span style="font-family:Tahoma; font-size:11pt">"颜值": ["主播女王，待你长发及腰时，打包带走可否？", "大家都是老司机"],</span>
       </p>
@@ -98,9 +101,9 @@
       </p>
       <p style="margin:3.75pt 0pt; text-indent:48pt">
         <span style="font-family:Tahoma; font-size:11pt"></span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">-------------------------------------</span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">中奖致谢区</span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">-------------------------------------​</span></p>
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">---------------------------------</span>
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">中奖致谢区(字段可以为空)</span>
+        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">---------------------------------</span></p>
       <p style="margin:3.75pt 0pt; text-indent:48pt">
         <span style="font-family:Tahoma; font-size:11pt">"winning": ["谢谢大佬，我居然中了！","中奖的赶脚，好舒服!"],</span>
       </p>
@@ -108,15 +111,7 @@
         <span style="font-family:Tahoma; font-size:11pt">"noprize":["又双叒叕没中呀，好蓝瘦！"," 我太难了，又没中"],</span>
       </p>
       <p style="margin:3.75pt 0pt; text-indent:48pt">
-        <span style="font-family:Tahoma; font-size:11pt">"giftThank": ["大佬财满溢三江，名誉响九州！","大侠侠肝义胆，仗义疏财！"],</span>
-      </p>
-      <p style="margin:3.75pt 0pt; text-indent:48pt">
-        <span style="font-family:Tahoma; font-size:11pt"></span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">------------------------------------</span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">AI弹幕过滤区</span>
-        <span style="background-color:#ffff00; font-family:Tahoma; font-size:11pt">-------------------------------------</span></p>
-      <p style="margin:3.75pt 0pt; text-indent:48pt">
-        <span style="font-family:Tahoma; font-size:11pt">"AIFilter": ["机器人","不","懵","小思","什么","优秀","没有学过","难到"]</span>
+        <span style="font-family:Tahoma; font-size:11pt">"giftThank": ["大佬财满溢三江，名誉响九州！","大侠侠肝义胆，仗义疏财！"]</span>
       </p>
       <p style="margin:3.75pt 0pt;text-indent:48pt">
         <span style="font-family:Tahoma; font-size:11pt">}</span></p>
@@ -138,29 +133,31 @@
       </p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 42pt; orphans:0; text-align:justify; text-indent:-21pt; widows:0">
         <span style="font-family:Wingdings; font-size:12pt"></span>
-        <span style="font-family:等线; font-size:12pt">房间二级标题区(如王者荣耀，和平精英、舞蹈、颜值等)，这个是根据房间的二级标题类分类的，支持斗鱼所有房间二级标题分类，比如您特别喜欢看绝地求生类的吃鸡游戏，这里可以专门定义此类弹幕，标题头写“绝地求生”，内容为“大吉大利，赶快恰鸡”，“天命圈砸脸了”……脚本会根据当前房间的二级标题，自动匹配到标题后面的弹幕内容，这也是弹幕体系最为精华的部分，因为可以因房间而异，进一步降低被识别为机器人的风险，建议大家多多备用一些经常光顾某类房间的弹幕，发送频率为1；（可以为空）</span>
+        <span style="font-family:等线; font-size:12pt">房间类别区(如王者荣耀，和平精英、舞蹈、颜值等)，这个是根据房间的二级标题类分类的，根据您的喜欢添加响应的房间类别，比如您特别喜欢看绝地求生类的吃鸡游戏，这里可以专门定义此类弹幕，标题头写“绝地求生”，内容为“大吉大利，赶快恰鸡”，“天命圈砸脸了”……脚本会根据当前房间的二级标题，自动匹配到标题后面的弹幕内容，这也是弹幕体系最为精华的部分，因为可以因房间而异。而当您跳转到其他非绝地求生房间，则不会发送这些弹幕，进一步降低暴露人机的风险，建议大家多多备用一些经常光顾某类房间的弹幕，发送频率为1；（可以为空）</span>
       </p>
-      <p style="font-size:12pt; line-height:150%; margin-left: 44px; orphans:0; text-align:justify; widows:0">
-        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_2.png" width="561" height="134" alt="图片" /></p>
+      <p style="font-size:12pt; line-height:150%; margin-left: 55px; orphans:0; text-align:justify; widows:0">
+        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_2.png" /></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0">
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 42pt; orphans:0; text-align:justify; text-indent:-21pt; widows:0">
         <span style="font-family:Wingdings; font-size:12pt"></span>
-        <span style="font-family:等线; font-size:12pt">Winning-中奖弹幕，比如参加火力全开，活动结束发现中奖名单里有自己，则会自动发送此类弹幕进行感谢房管或主播。发送频率为火力全开的结束时间点。（不建议为空，否则总会发送脚本默认-“哈哈，中奖了”）</span>
+        <span style="font-family:等线; font-size:12pt">Winning-中奖弹幕，比如参加火力全开，活动结束发现中奖名单里有自己，则会自动发送此类弹幕进行感谢房管或主播。发送频率为火力全开的结束时间点。（可以为空，但不建议，否则总会发送脚本默认-“哈哈，中奖了”）</span>
       </p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 42pt; orphans:0; text-align:justify; widows:0">
-        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_3.png" width="448" height="22" alt="" style="-aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline" /></p>
+        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_3.png" /></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 42pt; orphans:0; text-align:justify; text-indent:-21pt; widows:0">
         <span style="font-family:Wingdings; font-size:12pt"></span>
-        <span style="font-family:等线; font-size:12pt">Noprize-没奖弹幕，和上面的正好相反，火力全开结束后发现自己没中奖，则会发送此类弹幕吐槽诉苦下下。（不建议为空，否则总发送默认-“有么得中，蓝瘦”）</span>
+        <span style="font-family:等线; font-size:12pt">Noprize-没奖弹幕，和上面的正好相反，火力全开结束后发现自己没中奖，则会发送此类弹幕吐槽诉苦下下。（可以为空，但不建议，否则总发送默认-“又么得中，蓝瘦”）</span>
       </p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 42pt; orphans:0; text-align:justify; text-indent:-21pt; widows:0">
         <span style="font-family:Wingdings; font-size:12pt"></span>
-        <span style="font-family:等线; font-size:12pt">giftThank-礼物致谢功能，这个功能需要开启火力脚本的隐藏功能方可使用，主要是感谢水友大家赠送的礼物，感谢房管的火力全开而准备的弹幕。您可以进入QQ群（650178547）去下载《火力AI脚本隐藏功能教程和密码》来开启隐藏功能，（未开启此功能的用户，可以为空）</span>
+        <span style="font-family:等线; font-size:12pt">giftThank-礼物致谢功能，主要发送感谢其他人赠送礼物，和房管火力全开发丸子的的弹幕，注意这个弹幕是弹幕的后半部分，前半部分为感谢某人的具体信息，见下面效果图。这个功能需要开启隐藏功能方可使用，（可以为空，但如何使用此功能建议最好添加，否则总会发脚本默认-“老板大气”）</span>
+
       </p>
-      <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 42pt; orphans:0; text-align:justify; text-indent:-21pt; widows:0">
-        <span style="font-family:Wingdings; font-size:12pt"></span>
-        <span style="font-family:等线; font-size:12pt">AIFilter-过滤AI机器人沙雕词汇的语料库，如果您开启了隐藏功能弹幕混用，则可以用私有云弹幕和AI弹幕混合使用，虽然是被大家吐槽最多的AI聊天机器人，但凝聚了作者很高的期待，有时的确有点沙雕，所以只好过滤一些机器人比较无知懵逼或百科全书式的回答，目前AI机器人还在训练中。希望大家多多包容撒，这个过滤词汇库可以添加词汇或语句，如果AI的回答中包含了过滤词汇库中的语句，那么会屏蔽发送此条弹幕，切换私有弹幕库随机匹配一条。如果您不知道要填什么，建议按照下载json模板（注意不是上面第二条说明展示的模板，因为不全）直接照搬就好。</span>
-      </p>
+      <table style=" margin-left: 55px;"><tr> 
+        <td><img src="https://rawcdn.githack.com/wolf-scream/FirePowerSeek/567152d5a660e937e786743748affd65fa537296/pics/thankAdmin.png" width="100%"></td>
+        <td>&nbsp;&nbsp;</ td>
+        <td><img src="https://rawcdn.githack.com/wolf-scream/FirePowerSeek/567152d5a660e937e786743748affd65fa537296/pics/thankDonator.png" width="100%"></td>
+      </tr></table>      
       <p style="font-family:等线; font-size:12pt; font-weight:bold; line-height:150%; margin:0pt 0pt 0pt 14pt; orphans:0; padding-left:4pt; text-align:justify; text-indent:0pt; widows:0">
           <span style="font-family:等线; font-size:12pt; font-weight:bold">4. 大家按照上述要求，编辑好自定义的弹幕库内容后，先去要去bejson校验数据格式的正确性，网址</span>
           <a style="color:#0563c1" href="http://www.bejson.com/">
@@ -168,30 +165,27 @@
           <span style="font-family:等线; font-size:12pt; font-weight:bold">先把内容复制粘贴到网址的文字输入框内，然后点击校验，如果下面出现正确，那么恭喜您，您编辑的内容过关了。如果错了也不要紧，作者也经常忘记输入引号，或逗号错用中文的全角，这里会校验会提示您哪行错误，从而方便修改。
           </span>
       </p>
-      <p style="font-family:等线; font-size:12pt; font-weight:bold; line-height:150%; margin:0pt 0pt 0pt 14pt; orphans:0; padding-left:4pt; text-align:justify;text-indent:24pt">
-          <span style="font-family:等线; font-size:12pt; font-weight:bold">下面这段话主要给不了解json的小白解释的，如果这还不懂，就别@作者大大了，自行百度学习吧，当然发红包除外哈。格式主要以格式中的{}(大括号)，[](中括号)，：(冒号)，""(引号)，和,(逗号)都要用英文半角输入，否则会报错，每个双引号内为一条弹幕内容，在双引号内的的符号(比如"主播好美，么么哒！")的符号，您可以随便用中文的逗号和叹号等。</span>
-      </p>
       <p style="font-size:12pt; line-height:150%; margin-left: 24px; orphans:0; text-align:justify;">
-        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_4.png" width="615" height="402"/></p>
+        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_4.png"/></p>
       <ol start="5" type="1" style="margin:0pt; padding-left:0pt">
         <li style="font-family:等线; font-size:12pt; font-weight:bold; line-height:150%; margin:0pt 0pt 0pt 14pt; orphans:0; padding-left:4pt; text-align:justify; text-indent:0pt; widows:0">
-          <span style="font-family:等线; font-size:12pt; font-weight:bold">5.弹幕文件准备好了，介绍到这里我们的旅程就快要结束了，但在此之前，我们还有最最关键的一步，把自定义私有云弹幕库，放到网上，这样无论您切换到哪台电脑（家里或单位），都可以使用自己的云弹幕库。下面把json文件的名字改为自己斗鱼的昵称（要严格一致），比如我斗鱼的昵称叫”五花肉”，那么我的自定义弹幕文件名字为“五花肉.json”，不要有空格回车等无用占位符号。然后来到网址</span>
+          <span style="font-family:等线; font-size:12pt; font-weight:bold">5.弹幕文件准备好了，还有最最关键的一步，就是把自定义私有云弹幕库，放到网络云端（您私人专用），这样无论您切换到哪台电脑（家里或单位），都可以使用自己的云弹幕库。下面把json文件的名字(如template.json)改为自己斗鱼的昵称.json（要严格一致），比如我斗鱼的昵称叫”五花肉”，那么我的自定义弹幕文件名字为“五花肉.json”，不要有空格回车等无用占位符号(如果您后期更改了斗鱼昵称，则需要重新上传新昵称的弹幕文件)。然后来到网址</span>
           <a style="color:#0563c1" href="https://popzoo.github.io/barrage/">
             <span style="color:#0563c1; font-family:等线; font-size:12pt; font-weight:bold; text-decoration:underline">https://popzoo.github.io/barrage/</span>
           </a>
           <span style="font-family:等线; font-size:12pt; font-weight:bold">点击 “ 选择文件 ” ，或者将自己的文件 直接拖拽到选择文件正上方，然后 页面会自定识别并判断您的私有弹幕是否符合规则，不符合规则会提示您更改意见。</span>
       </ol>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
-        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_5.png" width="533" height="170" alt="" style="-aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline" /></p>
+        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_5.png"/></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
         <span style="font-family:等线; font-size:12pt; font-weight:bold">符合规则则出现下面提示框。这说明您最后一步成功了，下面就可以去脚本内找个火力房间试试效果喽。目前仅支持文本5MB的内容，如果全是文本已经非常大了，一部上百万字的小说的文字量。所以尽情的用吧! </span></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
-        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_6.png" width="452" height="157"/></p>        
+        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_6.png"/></p>        
       </p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
         <span style="font-family:等线; font-size:12pt; font-weight:bold">上传成功后，回到火力脚本，在任意直播间刷新页面后，F12查看控制台,如果出现下图的字样，说明您的私有专属云弹幕已经被启用了，Bingo,快去开心滴玩耍吧！少年！</span></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
-        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_7.png" width="466" height="210"/></p>        
+        <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_7.png"/></p>        
       </p>
         <br />
         <span style="font-family:'等线 Light'; font-size:16pt; font-weight:800;">特别说明</span></p>
