@@ -32,7 +32,7 @@
       <h1 style="font-size:22pt; line-height:150%; margin:17pt 0pt 16.5pt;padding-top: 15px; page-break-after:avoid; page-break-inside:avoid; text-align:center; widows:0">
         <span style="font-family:等线; font-size:22pt; font-weight:bold">自定义私有云弹幕教程</span></h1>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
-        <span style="font-family:等线; font-size:14pt; font-weight:bold;">应水友的强烈要求和吐槽(大都吐槽AI机器人太沙雕萌新)之下，且云弹幕库内容太过陈旧内容有限(目前火力脚本采用AI智能聊天+云弹幕库混用)，所以增加了自定义私有云弹幕功能。这里采用JSON格式的文本弹幕，优点是轻量级、易编辑、速度快，文本大小限制小于5MB(只要会用word的小白按照步骤都可以配置成功)，需要注意的是此云弹幕需要配合<a href="https://greasyfork.org/zh-CN/scripts/389379" target="_blank">斗鱼自动搜火力脚本</a>版本号0.6.9以上才支持。</span></p>
+        <span style="font-family:等线; font-size:14pt; font-weight:bold;">应水友的强烈要求和吐槽(大都吐槽AI机器人太沙雕萌新)之下，且云弹幕库内容太过陈旧内容有限(目前火力脚本采用AI智能聊天+云弹幕库混用)，所以增加了自定义私有云弹幕功能。这里采用JSON格式的文本弹幕，优点是轻量级、易编辑、速度快，文本大小限制小于5MB(只要会用word的小白按照步骤都可以配置成功)，需要注意的是此云弹幕需要配合<a href="https://greasyfork.org/zh-CN/scripts/389379" target="_blank">斗鱼薅羊毛脚本</a>版本号0.6.9以上才支持。</span></p>
       <p style="font-size:14pt; line-height:150%; margin:0pt; text-indent:21pt;">
           <span style="font-family:等线; font-size:13pt; font-weight:normal;">下面这段话主要给不了解json的小白解释的，JSON格式主要以格式中的{}(大括号)，[](中括号)，：(冒号)，""(引号)，和,(逗号)都要用英文半角输入，否则会报错，每个双引号内为一条弹幕内容，在双引号内的的符号(比如"主播好美，么么哒！")的符号，您可以随便用中文的各种符号如逗号，叹号等，如果不懂也不要紧，大家把上面的模板下载下来，然后直接按下面的说明，改双引号里面的弹幕内容就OK了。文档说明中有些可以为空的字段，是指键值对(如下图json头中键值"msg"(键):"ok"(值))都省略掉(也可以都填写内容)，而不是只保留键，值为空(类似这种"msg":[""]或干脆没有"msg":)，如果这还不懂，可以自行百度了解下。</span>
       </p>        
@@ -183,7 +183,7 @@
         <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_6.png"/></p>        
       </p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:等线; font-size:12pt; font-weight:bold">上传成功后，回到火力脚本，在任意直播间刷新页面后，F12查看控制台,如果出现下图的字样，说明您的私有专属云弹幕已经被启用了，Bingo,快去开心滴玩耍吧！少年！</span></p>
+        <span style="font-family:等线; font-size:12pt; font-weight:bold">上传成功后，回到火力脚本，在任意直播间刷新页面后，F12查看控制台,如果出现下图的字样，说明您的私有专属云弹幕已经被启用了，但还需要做最最后一步，就是彻底关闭浏览器，自动清下缓存，如果不关浏览器(注：因为采用session缓存，所以刷新浏览器是无效的)，默认还是使用缓存的公用弹幕，所以这一步骤不可省略呦，Bingo,快去开心滴玩耍吧！少年！</span></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
         <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_7.png"/></p>        
       </p>
