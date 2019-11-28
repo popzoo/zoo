@@ -27,7 +27,7 @@
 			<li class='float_six'><a href="https://greasyfork.org/zh-CN/scripts/389379" style="color:gold;text-decoration:none;">GreaseFork</a></li>
 		</ul>
 	</div>
-	<!-- <div id="control_show_manual" style="text-align: left; max-width: 900px; margin: 0 auto 0;padding: 0 30px; background-color: rgba(235,235,235,0.7);border-radius: 10px;display:inherit;"> -->
+<!-- 	<div id="control_show_manual" style="text-align: left; max-width: 900px; margin: 0 auto 0;padding: 0 30px; background-color: rgba(235,235,235,0.7);border-radius: 10px;display:inherit;"> -->
   <div id="control_show_manual" style="text-align: left; max-width: 900px; margin: 0 auto 0;padding: 0 30px; background-color: rgba(235,235,235,0.7);border-radius: 10px;display:none;">
       <h1 style="font-size:22pt; line-height:150%; margin:17pt 0pt 16.5pt; padding-top: 15px;orphans:0; page-break-after:avoid; page-break-inside:avoid; text-align:center; widows:0">
         <span style="font-family:等线; font-size:22pt; font-weight:bold">薅羊毛脚本隐藏功能</span></h1>
@@ -36,7 +36,7 @@
       </p>
       <ol type="1" style="margin:0pt; padding-left:4pt;font-size:12pt; font-weight:bold;line-height: 30px;">
         <li>
-          1.自动发送答谢水友礼物弹幕+自动发送感谢房管开火弹幕；
+          1.自动发送答谢水友礼物弹幕+自动发送感谢房管开火弹幕（注：0.8.0版本开始，原“礼物致谢”改为“礼物答谢”）；
         </li><li>
           2.自定义私有弹幕后，是否启用AI弹幕与之混用（默认不启用，注：未定义私有弹幕则启用AI）；
         </li><li>
@@ -44,7 +44,7 @@
         </li><li>          
           4.自定义设置自动跳转次数上限（默认每天100次）;
         </li><li>
-          5.自定义设置火力全开结束后的等待时间（默认等待100s）；
+          5.自定义设置火力全开/粉丝福利社结束后的等待时间（默认等待60s，注：0.8.0版本开始，原“火力等待”改为“结束等待”）；
         </li><li>          
           6.自定义不符合房间的跳转延迟等待时间（默认是3s后跳转）;          
         </li>
@@ -69,10 +69,10 @@
       </tr></table>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 10px 20px; orphans:0; text-align:justify; text-indent:-21pt;">
         <span style="font-family:等线; font-size:12pt">b)</span>
-        <span style="font-family:等线; font-size:12pt">输入框填写“🀄礼物致谢🀄”，只要包含这几个特殊字符就可以了，大家可以</span><br>
+        <span style="font-family:等线; font-size:12pt">输入框填写“🀄礼物答谢🀄”，只要包含这几个特殊字符就可以了，大家可以</span><br>
         <span style="background-color:#ffff00; color:#ff0000; font-family:等线; font-size:12pt">复制这里</span>
         <span style="background-color:#ffff00; color:#ff0000; font-family:Wingdings; font-size:10.5pt"></span>
-        <span style="font-family:等线; font-size:12pt">🀄礼物致谢🀄</span>
+        <span style="font-family:等线; font-size:12pt">🀄礼物答谢🀄</span>
       </p>
       <table style="margin-left: 20px;"><tr>
         <td><img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/hiddenIns_3.png" width="100%"></td><td>&nbsp;&nbsp;</td>
@@ -161,16 +161,16 @@
 
 
       <h2 style="font-size:16pt; line-height:173%; margin:13pt 0pt; orphans:0; page-break-after:avoid; page-break-inside:avoid; text-align:justify; widows:0">
-        <span style="font-family:'等线 Light'; font-size:16pt; font-weight:bold">5、自定义火力全开停止后等待时间</span>
+        <span style="font-family:'等线 Light'; font-size:16pt; font-weight:bold">5、自定义火力全开/粉丝福利社活动结束后等待时间</span>
       </h2>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 21pt; orphans:0; text-align:justify; text-indent:-21pt;">
         <span style="font-family:等线; font-size:12pt">a)</span>
-        <span style="font-family:等线; font-size:12pt">自定义设置火力全开结束后的等待时间，下图的数值120表示如果等待火力全开时间超过120s,则自动跳转寻找新的火力全开直播间，默认时间等待100s。(一定要注意格式，箭头后是纯数字，箭头不可缺失，可以有空格，单独存放)；参数取值范围：1~随心所欲大；</span>
+        <span style="font-family:等线; font-size:12pt">自定义设置火力全开/粉丝福利社结束后的等待时间，下图的数值120表示等待火力全开/福利社活动结束时间超过120s,则自动跳转寻找新的火力全开/福利社直播间，默认时间等待60s。(一定要注意格式，箭头后是纯数字，箭头不可缺失，可以有空格，单独存放)；参数取值范围：1~随心所欲大；</span>
       </p>
       <p style="margin:5px 0 10px 20px; orphans:0; text-align:justify; widows:0">
         <span style="background-color:#ffff00; color:#ff0000; font-family:等线; font-size:12pt">这里复制</span>
         <span style="background-color:#ffff00; color:#ff0000; font-family:Wingdings; font-size:10.5pt"></span>
-        <span style="font-family:等线; font-size:12pt">🀄火力等待🀄▶120</span>
+        <span style="font-family:等线; font-size:12pt">🀄结束等待🀄▶120</span>
       </p>         
       <table style="margin-left: 20px;"><tr>
         <td><img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/hiddenIns_12.png" width="100%"></td><td>&nbsp;&nbsp;</td>
