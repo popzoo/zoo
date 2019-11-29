@@ -411,7 +411,7 @@ $(function(){//极速 	#FFBBFF
 		'times' :'V0.7.0',
 		'even' :'优化自动取关功能，白嫖抢丸子跑路不关注功能优化了，带牌粉丝牌的房间默认不取关，特殊关注的房间默认不取关'
 	},{
-		'months' : 4,
+		'months' : 3,
 		'times' :'V0.7.1',
 		'even' :'修复因斗鱼升级导致车队无法自动签到,昵称更新,弹幕和过滤网络节点优化，更新机制优化，清除localstorage延迟'	
 	},{
@@ -419,40 +419,44 @@ $(function(){//极速 	#FFBBFF
 		'times' :'V0.7.2',
 		'even' :'去除了自定义弹幕配置中需要设置AI过滤的配置列表参数，修复二合一开关关闭时弹幕轰炸无法自动发送弹幕的bug'	
 	},{
-		'months' : 8,
+		'months' : 7,
 		'times' :'V0.7.3',
 		'even' :'新增隐藏功能-关闭幻神特效功能，新增隐藏功能-不符合筛选房间的跳转延迟设置，优化公有弹幕和绑定缓存到浏览器'	
 	},{
 		'months' : 10,
 		'times' :'V0.7.4',
-		'even' :'去除@require依赖库，增加异地账号登陆自动跳转的，修复感谢主播弹幕undefined的bug，增加了小葫芦的统计'							
+		'even' :'去除@require依赖库，增加异地账号登陆自动跳转的，修复感谢主播弹幕undefined的bug，增加了小葫芦的统计'
+	},{
+		'months' : 11,
+		'times' :'V0.7.5',
+		'even' :'修改未开启礼物致谢功能，就发送感谢礼物弹幕的bug'			
 	}]},
-	// {
-	// 'year' : "更新",
-	// 'events' :[
-	// {
-	// 	'months' : 2,
-	// 	'times' :'V0.7.5',
-	// 	'even' :'优化自动取关功能，白嫖抢丸子跑路不关注功能优化了，带牌粉丝牌的房间默认不取关，特殊关注的房间默认不取关'
-	// },{
-	// 	'months' : 4,
-	// 	'times' :'V0.7.6',
-	// 	'even' :'修复因斗鱼升级导致车队无法自动签到,昵称更新,弹幕和过滤网络节点优化，更新机制优化，清除localstorage延迟'	
-	// },{
-	// 	'months' : 6,
-	// 	'times' :'V0.7.7',
-	// 	'even' :'去除了自定义弹幕配置中需要设置AI过滤的配置列表参数'	
-	// },{
-	// 	'months' : 8,
-	// 	'times' :'V0.7.8',
-	// 	'even' :'……未来可期……'	
-	// },{
-	// 	'months' : 10,
-	// 	'times' :'V0.7.9',
-	// 	'even' :'……翘首以待……'							
-	// }]},		
 	{
-	'year' : '<a href="https://popzoo.github.io/zoo/hiddenFlower.html" target="_blank" style="color:#EE3B3B;">除恶</a>',
+	'year' : "升级",
+	'events' :[
+	{
+		'months' : 2,
+		'times' :'V0.8.0',
+		'even' :'脚本改造升级，由原有单一的火力系统升级为火力系统+粉丝福利社两套系统，两套系统可以通过单选按钮无缝切换'
+	},{
+		'months' : 4,
+		'times' :'V0.8.1',
+		'even' :'修复私有弹幕缓存后无法正常解析的问题，修复二合一开关开启停止弹幕轰炸后无限跳转的bug问题'	
+	},{
+		'months' : 6,
+		'times' :'V0.8.2',
+		'even' :'……敬请期待……'	
+	},{
+		'months' : 8,
+		'times' :'V0.8.3',
+		'even' :'……未来可期……'	
+	},{
+		'months' : 10,
+		'times' :'V0.8.4',
+		'even' :'……翘首以待……'							
+	}]},		
+	{
+	'year' : '<div onclick="jumpToShareNode()" style="color:#EE3B3B;">除恶</div>',
 	'events' :[
 	{
 		'months' : 3,
@@ -483,9 +487,11 @@ $(function(){//极速 	#FFBBFF
 				QRCodeObject.style.display = "none";
 			}
 		}
-	}	
-</script>
-<script type="text/javascript">
+	}
+	function jumpToShareNode(){
+		sessionStorage.setItem('personalDanmu',"limit");
+		window.open("https://popzoo.github.io/pop/fireroom.html","_blank");
+	}
 </script>
 </body>
 </html>
