@@ -32,33 +32,36 @@
       <h1 style="font-size:22pt; line-height:150%; margin:17pt 0pt 16.5pt;padding-top: 15px; page-break-after:avoid; page-break-inside:avoid; text-align:center; widows:0">
         <span style="font-family:等线; font-size:22pt; font-weight:bold">自定义私有云弹幕教程</span></h1>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
-        <span style="font-family:等线; font-size:14pt; font-weight:bold;">应水友的强烈要求和吐槽(大都吐槽AI机器人太沙雕萌新)之下，且云弹幕库内容太过陈旧内容有限(目前火力脚本采用AI智能聊天+云弹幕库混用)，所以增加了自定义私有云弹幕功能。这里采用JSON格式的文本弹幕，优点是轻量级、易编辑、速度快，文本大小限制小于5MB(只要会用word的小白按照步骤都可以配置成功)，需要注意的是此云弹幕需要配合<a href="https://greasyfork.org/zh-CN/scripts/389379" target="_blank">斗鱼薅羊毛脚本</a>版本号0.6.9以上才支持。</span></p>
+        <span style="font-family:等线; font-size:14pt; font-weight:bold;">应水友的强烈要求和吐槽(大都吐槽AI机器人太沙雕萌新)之下，且云弹幕库内容太过陈旧内容有限(目前薅羊毛脚本采用AI智能聊天+云弹幕库混用)，所以增加了自定义私有云弹幕功能。这里采用JSON格式的文本弹幕，优点是轻量级、易编辑、速度快，文本大小限制小于5MB(只要会用word的小白按照步骤都可以配置成功)，需要注意的是此云弹幕需要配合<a href="https://greasyfork.org/zh-CN/scripts/389379" target="_blank">斗鱼薅羊毛脚本</a>版本号0.6.9以上才支持。</span></p>
       <p style="font-size:14pt; line-height:150%; margin:0pt; text-indent:21pt;">
-          <span style="font-family:等线; font-size:13pt; font-weight:normal;">下面这段话主要给不了解json的小白解释的，JSON格式主要以格式中的{}(大括号)，[](中括号)，：(冒号)，""(引号)，和,(逗号)都要用英文半角输入，否则会报错，每个双引号内为一条弹幕内容，在双引号内的的符号(比如"主播好美，么么哒！")的符号，您可以随便用中文的各种符号如逗号，叹号等，如果不懂也不要紧，大家把上面的模板下载下来，然后直接按下面的说明，改双引号里面的弹幕内容就OK了。文档说明中有些可以为空的字段，是指键值对(如下图json头中键值"msg"(键):"ok"(值))都省略掉(也可以都填写内容)，而不是只保留键，值为空(类似这种"msg":[""]或干脆没有"msg":)，如果这还不懂，可以自行百度了解下。</span>
+          <span style="font-family:等线; font-size:13pt; font-weight:normal;">下面这段话主要给不了解json的小白解释的，JSON格式主要以格式中的{}(大括号)，[](中括号)，：(冒号)，""(引号)，和,(逗号)都要用英文半角输入，否则会报错，每个双引号内为一条弹幕内容，在双引号内的的符号(比如"主播好美，么么哒！")的符号，您可以随便用中文的各种符号如逗号，叹号等，如果不懂也不要紧，大家把下面的模板下载下来，然后按照下面的说明，改双引号里面的弹幕内容就OK。文档说明中有些可以为空的字段，是指键值对(如下图json头中键值"msg"(键):"ok"(值))都要省略掉(也可以都填写内容)，而不是只保留键，值为空(类似这种"msg":[""]或干脆没有值，如"msg":)，如果还不懂，可以百度了解下。</span>
       </p>        
       <ol type="1" style="margin:0pt; padding-left:0pt">
         <li style="font-family:等线; font-size:12pt; font-weight:bold; line-height:150%; margin:0pt 0pt 0pt 14pt; orphans:0; padding-left:4pt; text-align:justify; text-indent:0pt; widows:0">
           <span style="font-family:等线; font-size:12pt; font-weight:bold">1. 首先去下面链接下载云弹幕定制模板，文件内容见下面图片</span></li>
       </ol>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:等线; font-size:12pt; font-weight:bold">链接：</span>
+        <span style="font-family:等线; font-size:12pt; font-weight:bold">普通模板链接：</span>
         <a style="color:#0563c1" href="https://cdn.statically.io/gh/popzoo/barrage/master/json/template.json">
-          <span style="color:#0563c1; font-family:等线; font-size:12pt; font-weight:bold; text-decoration:underline">https://cdn.statically.io/gh/popzoo/barrage/master/json/template.json</span></a>
+          <span style="color:#0563c1; font-family:等线; font-size:12pt; font-weight:bold; text-decoration:underline">https://cdn.statically.io/gh/popzoo/barrage/master/json/template.json</span></a><br>
+        <span style="font-family:等线; font-size:12pt; font-weight:bold">极简模板链接：</span>
+        <a style="color:#0563c1" href="https://cdn.statically.io/gh/popzoo/barrage/master/json/easyTemplate.json">
+          <span style="color:#0563c1; font-family:等线; font-size:12pt; font-weight:bold; text-decoration:underline">https://cdn.statically.io/gh/popzoo/barrage/master/json/easyTemplate.json</span></a><br>
+        <span style="font-family:等线; font-size:12pt; font-weight:bold">公用弹幕链接：</span>  
+        <a style="color:#0563c1" href="https://cdn.statically.io/gh/popzoo/barrage/master/danmu.json">
+          <span style="color:#0563c1; font-family:等线; font-size:12pt; font-weight:bold; text-decoration:underline">https://cdn.statically.io/gh/popzoo/barrage/master/danmu.json</span></a>
       </p>
       <p style="font-size:12pt; line-height:150%; margin-left: 24px; orphans:0; text-align:justify; widows:0">
         <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_1.png"/></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:等线; font-size:12pt; font-weight:bold">Ctrl+S保存到本地为json文件格式。也可以下载目前公用的云弹幕，不过体积较大，而且需要格式化</span>
-        <a style="color:#0563c1" href="https://cdn.statically.io/gh/popzoo/barrage/master/danmu.json">
-          <span style="color:#0563c1; font-family:等线; font-size:12pt; font-weight:bold; text-decoration:underline">https://cdn.statically.io/gh/popzoo/barrage/master/danmu.json</span></a>
-        <span style="font-family:等线; font-size:12pt; font-weight:bold">，BeJson网址格式化json文本，</span>
+        <span style="font-family:等线; font-size:12pt; font-weight:bold">Ctrl+S保存到本地为json文件格式。大家也可以下载目前公用的云弹幕，不过体积较大，而且需要格式化</span>
+        <span style="font-family:等线; font-size:12pt; font-weight:bold">（BeJson网址格式化json文本--></span>
         <a style="color:#0563c1" href="http://www.bejson.com/">
           <span style="color:#0563c1; font-family:等线; font-size:12pt; font-weight:bold; text-decoration:underline">http://www.bejson.com/</span></a>
-      <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:等线; font-size:12pt; font-weight:bold">这回结构是不是清晰了很多，下面我们着重介绍自定义弹幕的内容格式。</span></p>
+        <span style="font-family:等线; font-size:12pt; font-weight:bold">)，这回结构是不是清晰了很多，下面我们着重介绍自定义弹幕的内容格式。</span>
       <ol start="2" type="1" style="margin:0pt; padding-left:0pt">
         <li style="font-family:等线; font-size:12pt; font-weight:bold; line-height:150%; margin:0pt 0pt 0pt 14pt; orphans:0; padding-left:4pt; text-align:justify; text-indent:0pt; widows:0">
-          <span style="font-family:等线; font-size:12pt; font-weight:bold">2. 文本格式为json格式，大家可以用win的记事本或者其他文本编辑工具打开此文件。外部包裹头不要改，否则无法程序可能无法解析数据，直接改data里面的数据。</span>
+          <span style="font-family:等线; font-size:12pt; font-weight:bold">2. 文本格式为json格式，大家可以用win的记事本或者其他文本编辑工具打开此文件。外部包裹头(如msg,error等)不要改，否则脚本无法解析数据，直接改data括号里面的数据。</span>
       </li>
       </ol>
       <div style="margin-left: 40pt;">
@@ -120,8 +123,7 @@
     </div>
       <ol start="3" type="1" style="margin:0pt; padding-left:0pt">
         <li style="font-family:等线; font-size:12pt; font-weight:bold; line-height:150%; margin:0pt 0pt 0pt 14pt; orphans:0; padding-left:4pt; text-align:justify; text-indent:0pt; widows:0">
-          <span style="font-family:等线; font-size:12pt; font-weight:bold">下面详细介绍云弹幕的发送</span>
-          <span style="font-family:等线; font-size:12pt; font-weight:bold">规律和标题含义。</span></li>
+          <span style="font-family:等线; font-size:12pt; font-weight:bold">3.云弹幕的发送规律和标题含义如下：</span>
       </ol>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 42pt; orphans:0; text-align:justify; text-indent:-21pt; widows:0">
         <span style="font-family:Wingdings; font-size:12pt"></span>
@@ -183,22 +185,25 @@
         <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_6.png"/></p>        
       </p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
-        <span style="font-family:等线; font-size:12pt; font-weight:bold">上传成功后，回到火力脚本，在任意直播间刷新页面后，F12查看控制台,如果出现下图的字样，说明您的私有专属云弹幕已经被启用了，但还需要做最最后一步，就是彻底关闭浏览器，自动清下缓存，如果不关浏览器(注：因为采用session缓存，所以刷新浏览器是无效的)，默认还是使用缓存的公用弹幕，所以这一步骤不可省略呦，Bingo,快去开心滴玩耍吧！少年！</span></p>
+        <span style="font-family:等线; font-size:12pt; font-weight:bold">上传成功后，还需要做最最后一步，就是彻底关闭浏览器，清下缓存(注：因为采用session缓存，所以刷新浏览器还是有缓存的)，如果不重启浏览器，默认还是使用缓存的公用弹幕(或您老版的私有云弹幕)，所以这一步骤不可省略呦！回到脚本，在任意直播间刷新页面后，F12查看控制台，如果出现下图的字样，说明您的私有专属云弹幕已经被启用了，Bingo，快去开心滴玩耍吧！少年！</span></p>
       <p style="font-size:12pt; line-height:150%; margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0">
         <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_7.png"/></p>        
       </p>
         <br />
         <span style="font-family:'等线 Light'; font-size:16pt; font-weight:800;">特别说明</span></p>
       <p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
-        <span style="font-family:等线;line-height: 22px; font-size:12pt">上面所有的配置是跟随用户账号关联的，出于安全考虑，生成的云弹幕链接属于脚本程序专属应用使用，不能公共访问生成的云弹幕链接（所以没公开链接地址），主要防止别人通过链接直接盗用您的云弹幕文案，目前初期阶段还提供了用户名下载云弹幕功能，方便大家异地编写云端库。由于是昵称名匹配设置，所以每个账户对应一个云弹幕库，新上传的云弹幕文件会自动覆盖旧版的云弹幕文件，此过程不可逆。后期会提高安全措施，增加些验证或秘钥，防止他人知道您的昵称后任意下载您的弹幕库内容。</span>
-        <br />
-        <span style="font-family:等线; font-size:12pt;">如有不足和意见欢迎给作者发email：</span>
-        <a style="color:#0563c1" href="mailto:地址为lvlanxing@gmail.com">
-          <span style="color:#0563c1; font-family:等线; font-size:12pt; text-decoration:underline">lvlanxing@gmail.com</span>
-        </a>
-        <span style="font-family:等线; font-size:12pt">，希望大家多多支持！</span>
-        <br/>
-        <span style="font-family:等线; font-size:12pt">&#xa0;</span></p>
+        <ol>
+        <li style="font-family:等线;line-height: 22px; font-size:12pt"><span style="font-family:Wingdings; font-size:12pt"></span>上面所有的配置是跟随用户账号关联的，目前初期阶段还提供了昵称下载云弹幕功能，方便大家异地编写云弹幕。由于是昵称名匹配设置，所以每个账户对应一个云弹幕库，新上传的云弹幕文件会自动覆盖旧版的云弹幕文件，此过程不可逆。如果大家有需求，后期可以提高安全措施，防止他人知道您的昵称后任意下载您的弹幕库内容。</li>
+        <li style="font-family:等线;line-height: 22px; font-size:12pt"><span style="font-family:Wingdings; font-size:12pt"></span>目前暂不支持删除弹幕功能，如果大家想去除自己的云弹幕内容，可以发一个内容为{}的空括号json文件来覆盖自己以前的云弹幕内容，保护自己弹幕隐私安全，也可以进QQ群650178547@斑竹帮你手动删数据库哈！</li>
+        <li style="font-family:等线; font-size:12pt;"><span style="font-family:Wingdings; font-size:12pt"></span>如有不足和意见欢迎给作者发email：
+          <a style="color:#0563c1" href="mailto:lvlanxing@gmail.com">
+            <span style="color:#0563c1; font-family:等线; font-size:12pt; text-decoration:underline">lvlanxing@gmail.com</span>
+          </a>
+          <span style="font-family:等线; font-size:12pt">，希望大家多多支持！</span>
+        </li>
+      </ol>
+        <span style="font-family:等线; font-size:12pt">&#xa0;</span>
+      </p>
     </div>
     <br/>
 	<!-- <footer class="statcss" style="background-color: rgba(202,225,255,0.7);"> -->
