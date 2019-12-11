@@ -314,7 +314,7 @@ body{font-size: 14px;font-family: '微软雅黑';background-color: mistyrose;hei
 .header{display:block;text-decoration: none;text-align: center;font-size: 26px;font-weight: 400;height:60px;line-height: 60px;background-color: rgba(53,53,53,0.7);border-radius: 6px;}
 .body{line-height: 40px;}
 .body .header{font-size: 30px;margin: 10px 0 20px;font-weight: 600;}
-.statcss {text-align: center;line-height: 28px; width: 600px; font-size: 16px;color:orange;background-color: rgba(53,53,53,0.7);border-radius: 5px;margin: 0 auto;margin-bottom: 10px;}
+.statcss {text-align: center;line-height: 28px; width: 700px; font-size: 16px;color:orange;background-color: rgba(53,53,53,0.7);border-radius: 5px;margin: 0 auto;margin-bottom: 10px;}
 .event_wrap{position:relative;}
 .event_wrap .middle_line{position:absolute;left:50%;top:0;width:8px;margin-left: -3px;border-left: 6px solid #000;height:100%;}
 .event_wrap .middle_line i{display:block;height:3.31%;border-bottom: 1px solid #000;width:60%;}
@@ -356,7 +356,7 @@ body{font-size: 14px;font-family: '微软雅黑';background-color: mistyrose;hei
 .ev_text p{font-size: 17px;color: goldenrod;line-height: 20px;padding-left:20%;width:80%;height:40px;overflow: hidden;}
 .list_right .ev_text_event h3,.list_right .ev_text_event p,.list_left .ev_text_odd h3,.list_left .ev_text_odd p{padding-right: 100px;padding-left: inherit;}
 
-
+#cnzz_stat_icon_1278032070 a:link{color:orange;}
 /*=====================================================================*/
 /*==============================泡泡特效样式============================*/
 /*=====================================================================*/
