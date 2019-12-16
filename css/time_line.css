@@ -289,7 +289,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .dib_vm{display:inline-block; width:0; height:100%; vertical-align:middle;}
 /* 加载中背景图片 - 如果您使用该CSS小库，务必修改此图片地址 */
 /*.loading{background:url('https://rawcdn.githack.com/popzoo/zoo/7c486ebfa3f21eb5dc032ce5449c4a161d180619/img/spirit_ground.jpg') fixed repeat-y center center;}*/
-.loading{background:url('https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/spirit_ground.jpg') fixed repeat-y center center;}
+.loading{background:url('https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/spirit_ground.jpg') no-repeat fixed;background-size:100% 100%;-moz-background-size:100% 100%;}
 /* 无框文本框文本域 */
 .bd_none{border:0; outline:none;}
 /* 绝对定位隐藏 */
