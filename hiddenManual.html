@@ -284,8 +284,8 @@
 <script type="text/javascript">
     window.onload = showHiddenManual();
     function showHiddenManual(){
-        let validate = sessionStorage.getItem("personalDanmu");
-        if(validate==="true"){
+        // let validate = sessionStorage.getItem("personalDanmu");
+        if(getCookie("personalDanmu")==="true"){
             let showManual = document.getElementById("control_show_manual");
             if(showManual!=undefined){
                 showManual.style.display="inherit";
@@ -300,6 +300,18 @@
     function delayLoad(){
         setTimeout(showHiddenManual,1000);
     }
+    function getCookie(cookieName) {//here should use trim()
+        var validate = "";
+        var strCookie = document.cookie;
+        var arrCookie = strCookie.split("; ");
+        for(var i = 0; i < arrCookie.length; i++){
+            var arr = arrCookie[i].split("=");
+            if(cookieName == arr[0]){
+                validate = arr[1];
+            }
+        }
+        return validate;
+    }    
 </script>
 </body>
 </html>
