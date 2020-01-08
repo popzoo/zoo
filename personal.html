@@ -40,9 +40,7 @@
     </div>
     <canvas id="sakura" style="z-index: -1;"></canvas>
 <!-- sakura shader -->
-<script src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/js/cos-js-sdk-v5.min.js"></script>
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
-
 uniform mat4 uProjection;
 uniform mat4 uModelview;
 uniform vec3 uResolution;
@@ -327,7 +325,7 @@ void main(void) {
     gl_FragColor.a = 1.0;
 }
 </script>
-<script src="js/flower.js"></script>
+<!-- <script src="js/flower.js"></script> -->
+<script src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/js/bg-flower.js"></script>
 </body>
-
 </html>
