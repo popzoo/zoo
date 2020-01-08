@@ -32,7 +32,7 @@
       <h1 style="font-size:22pt; line-height:150%; margin:17pt 0pt 16.5pt;padding-top: 15px; page-break-after:avoid; page-break-inside:avoid; text-align:center; widows:0">
         <span style="font-family:等线; font-size:22pt; font-weight:bold">自定义私有云弹幕教程</span></h1>
       <p style="font-size:14pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0">
-        <span style="font-family:等线; font-size:14pt; font-weight:bold;">应水友的强烈要求和吐槽(大都吐槽AI机器人太沙雕萌新)之下，且云弹幕库内容太过陈旧内容有限(目前薅羊毛脚本采用AI智能聊天+云弹幕库混用)，所以增加了自定义私有云弹幕功能。这里采用JSON格式的文本弹幕，优点是轻量级、易编辑、速度快，文本大小限制小于5MB(只要会用word的小白按照步骤都可以配置成功)，需要注意的是此云弹幕需要配合<a href="https://greasyfork.org/zh-CN/scripts/389379" target="_blank">斗鱼薅羊毛脚本</a>版本号0.6.9以上才支持。</span></p>
+        <span style="font-family:等线; font-size:14pt; font-weight:bold;">应水友的强烈要求和吐槽(大都吐槽AI机器人太沙雕萌新)之下，且云弹幕库内容太过陈旧内容有限(目前薅羊毛脚本采用AI智能聊天+云弹幕库混用)，所以增加了自定义私有云弹幕功能。这里采用JSON格式的文本弹幕，优点是轻量级、易编辑、速度快，文本大小限制小于5MB(只要会用word的小白按照步骤都可以配置成功)，需要注意的是此云弹幕需要配合<a href="https://greasyfork.org/zh-CN/scripts/389379" target="_blank">斗鱼薅羊毛脚本</a>才支持。</span></p>
       <p style="font-size:14pt; line-height:150%; margin:0pt; text-indent:21pt;">
           <span style="font-family:等线; font-size:13pt; font-weight:normal;">下面这段话主要给不了解json的小白解释的，JSON格式主要以格式中的{}(大括号)，[](中括号)，：(冒号)，""(引号)，和,(逗号)都要用英文半角输入，否则会报错，每个双引号内为一条弹幕内容，在双引号内的的符号(比如"主播好美，么么哒！")的符号，您可以随便用中文的各种符号如逗号，叹号等，如果不懂也不要紧，大家把下面的模板下载下来，然后按照下面的说明，改双引号里面的弹幕内容就OK。文档说明中有些可以为空的字段，是指键值对(如下图json头中键值"msg"(键):"ok"(值))都要省略掉(也可以都填写内容)，而不是只保留键，值为空(类似这种"msg":[""]或干脆没有值，如"msg":)，如果还不懂，可以百度了解下。</span>
       </p>        
@@ -46,7 +46,7 @@
         <span style="font-family:等线; font-size:12pt; font-weight:bold">极简模板链接：</span>
         <a style="color:#0563c1" href="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/jsonDanmu/easyTemplate.json" target="_blank">点击这里</a><br>
         <span style="font-family:等线; font-size:12pt; font-weight:bold">公用弹幕链接：</span>  
-        <a style="color:#0563c1" href="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/jsonDanmu/publicDanmu.json" target="_blank">点击这里</a>
+        <a style="color:#0563c1" href="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/json/cloudDanmu.json" target="_blank">点击这里</a>
       </p>
       <p style="font-size:12pt; line-height:150%; margin-left: 24px; orphans:0; text-align:justify; widows:0">
         <img src="https://coding.net/u/lvlanxing/p/popzoo/git/raw/master/pics/danmuManual_1.png"/></p>
@@ -203,11 +203,7 @@
         <ol>
         <li style="font-family:等线;line-height: 22px; font-size:12pt"><span style="font-family:Wingdings; font-size:12pt"></span>上面所有的配置是跟随用户账号关联的，目前由于网站受到了恶意攻击，为避免大家云弹幕安全起见，暂时不支持下载服务，防止他人知道你的云弹幕肆意盗用。由于是昵称名匹配设置，所以每个账户对应一个云弹幕库，新上传的云弹幕文件会自动覆盖旧版的云弹幕文件，此过程不可逆。</li>
         <li style="font-family:等线;line-height: 22px; font-size:12pt"><span style="font-family:Wingdings; font-size:12pt"></span>目前暂不支持删除弹幕功能，如果大家想去除自己的云弹幕内容，可以发一个内容为{}的空括号json文件来覆盖自己以前的云弹幕内容，保护自己弹幕隐私安全，也可以进QQ群650178547@斑竹帮你手动删数据库哈！</li>
-        <li style="font-family:等线; font-size:12pt;"><span style="font-family:Wingdings; font-size:12pt"></span>如有不足和意见欢迎给作者发email：
-          <a style="color:#0563c1" href="mailto:lvlanxing@gmail.com">
-            <span style="color:#0563c1; font-family:等线; font-size:12pt; text-decoration:underline">lvlanxing@gmail.com</span>
-          </a>
-          <span style="font-family:等线; font-size:12pt">，希望大家多多支持！</span>
+        <li style="font-family:等线; font-size:12pt;"><span style="font-family:Wingdings; font-size:12pt"></span>如有不足和意见欢迎在作者Github上留言，希望大家多多支持！</span>
         </li>
       </ol>
         <span style="font-family:等线; font-size:12pt">&#xa0;</span>
