@@ -1,7 +1,7 @@
 $(function(){//极速 	#FFBBFF
 	var bigEvent =[
 	{
-	'year' : '<div onclick="showQRCode()" style="color:#FF83FA;">打赏</div>',
+	'year' : '<div onclick="showQRCode()" style="color:#FF83FA;text-decoration:none;">打赏</div>',
 	'events' :[
 	{
 		'months' : 2,
@@ -29,7 +29,7 @@ $(function(){//极速 	#FFBBFF
 		'even' :'<span style="color:#FF83FA;">巨赠￥50元仙币，仙师法力通天，慈施万民！</span>'			
 	}]},
 	{
-	'year' : '<div onclick="showQRCode()" style="color:lime;">捐助</div>',
+	'year' : '<div onclick="showQRCode()" style="color:lime;text-decoration:none;">捐助</div>',
 	'events' :[		
 	{
 		'months' : 2,
@@ -57,7 +57,7 @@ $(function(){//极速 	#FFBBFF
 		'even' :'<span style="color:#FF83FA;">义哺￥10元玉珠，公子汲水施恩，气吞山河！</span>'			
 	}]},	
 	{
-	'year' : '<div onclick="showQRCode()" style="color:#4EEE94;">布施</div>',
+	'year' : '<div onclick="showQRCode()" style="color:#4EEE94;text-decoration:none;">布施</div>',
 	'events' :[		
 	{
 		'months' : 2,
@@ -580,7 +580,7 @@ $(function(){//极速 	#FFBBFF
 		// 'even' :'……未来可期……'		
 	}]},
 	{
-	'year' : '<div onclick="jumpToScanBoard()" style="color:#EE3B3B;">铲奸</div>',
+	'year' : '<div onclick="jumpToScanBoard()" style="color:#EE3B3B;text-decoration:none;">铲奸</div>',
 	'events' :[
 	{
 		'months' : 2,
@@ -600,7 +600,7 @@ $(function(){//极速 	#FFBBFF
 		'even' :'⚡⚡⚡⚡⚡⚡戕害忠良受神诛⚡⚡⚡⚡⚡⚡'
 	},{			
 		'months' : 10,
-		'times' :'<span style="color:red;">楼底镇压大恶人-武林恶名[主播:爷大干*]</sapn>',
+		'times' :'<span style="color:red;">楼底镇压大恶人-武林恶名[主播:*大干]</sapn>',
 		'even' :'<span style="color:#EE3B3B;">薅羊毛大军滑铁卢之役(集体被禁半年)，以暴制暴将其封禁于九幽冥火之地狱，焚魂灼魄！</sapn>'
 	},{
 		'months' : 10,
@@ -608,7 +608,7 @@ $(function(){//极速 	#FFBBFF
 		'even' :'<span style="color:#EE3B3B;">发点弹幕抢鱼丸被诬刷屏禁言一年，这种脑残主播必须镇压在尸魂魔窟之深渊，不见天日！</sapn>'		
 	}]},	
 	{
-	'year' : '<div onclick="jumpToScanBoard()" style="color:#EE3B3B;">除恶</div>',
+	'year' : '<div onclick="jumpToScanBoard()" style="color:#EE3B3B;text-decoration:none;">除恶</div>',
 	'events' :[
 	{
 		'months' : 2,
