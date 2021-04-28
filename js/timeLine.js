@@ -85,7 +85,7 @@ $(function(){//极速 	#FFBBFF
 		'even' :'<span style="color:#FF83FA;">瀚赏￥10元帝钞，伟人明德惟馨，仁义无双！</span>'			
 	}]},
 	{
-	'year' : '<a href="https://popzoo.github.io/zoo/personal.html" style="color:cyan;text-decoration:none;" target="_blank">定制</a>',
+	'year' : '<a href= "'+document.location.protocol+'//'+document.domain+'/personal.html" style="color:cyan;text-decoration:none;" target="_blank">定制</a>',
 	'events' :[
 	{
 		'months' : 2,
@@ -117,7 +117,7 @@ $(function(){//极速 	#FFBBFF
 		// 'even' :'<span style="color:#FF83FA;">礼赐￥5元银饼，贵人鼎助义施，胸怀百川！</span>'		
 	}]},
 	{
-	'year' : '<a href="https://www.popzoo.xyz/hiddenManual.html" target="_blank" style="color:#BF3EFF;text-decoration:none;">点赞</a>',
+	'year' : '<a href="'+document.location.protocol+'//'+document.domain+'/hiddenManual.html" target="_blank" style="color:#BF3EFF;text-decoration:none;">点赞</a>',
 	'events' :[
 	{
 		'months' : 2,
@@ -698,7 +698,7 @@ $(function(){//极速 	#FFBBFF
 // let coreMsg = "庚子鼠年清明节，望帝啼鹃，悼念COVID抗疫中英勇就义的白衣天使们，不负民族使命，点燃华夏希望；抚胸回首，也祭奠薅羊毛惨遭屠戮的大军，爱心驰援沙场，马革裹尸埋冢……哽咽难语……<br>";
 // coreMsg+="奉天承运，群主诏曰：由于薅羊毛最近在DY平台为非作歹，乱带节奏，人身攻击，破坏生态，四宗罪合并处罚，被斗鱼官方正式封杀，";
 // coreMsg+="薅羊毛大军惨遭“长平屠戮”彻底覆灭，群主恶贯满盈，罄竹难书，人神共愤，天诛地灭。遂从即日起，薅羊毛宣布——彻底阵亡，钦此！！！";
-// coreMsg+="特写——落霞中映衬群主凝血颤巍的身影，他回首硝烟弥漫的战场和倒在血腥屠戮下的袍泽，俯身竭力捧起一面焚麓血染的大旗，仰天长啸——“薅羊毛，亡了！”";
+// coreMsg+="特写——落霞中映衬群主凝血颤巍的身影，他回首硝烟弥漫的战场和倒在血腥屠戮下的袍泽，俯身竭力捧起阵前焚麓血染的大纛，仰天长啸——“薅羊毛，亡了！”";
 // coreMsg+="言罢，轰然倒地，一代天骄和薅羊毛洪荒大军就此陨落！万马齐喑，愁雨惨淡鹧鸪鸣哀歌——致敬薅羊毛，为DY直播间带来温暖的峥嵘岁月！";
 // coreMsg+="瓦釜雷鸣，大雨滂沱血染覆苍天——悼念吾袍泽，为薅羊毛开疆拓土冲锋陷阵的将士英烈……全剧终!公元庚子鼠年如月末旬群主绝笔……";
 let coreMsg="popzoo网址运行即将一年，但也即将走入历史，感谢大家一年多的支持与鼓励，有过辉煌的门庭若市，也有过没落的门可罗雀。旧网址popzoo.xyz域名于2020-12-12正式终结。凡是过往，皆是序章，热爱这里的人，则不负卿一片冰心在玉壶。本站决定采用新域名为<a href='//popzoo.ga' style='color:green;' target='_blank'>传送</a>popzoo.ga，虽然脚本阵亡了，但柔情似水，佳期如梦，江东子弟多才俊，卷土重来未可知，还望各位惠存！<br>最后引用金庸先生《神雕侠侣》的片尾词来回敬诸位——今番良晤，豪兴不浅，他日江湖相逢，再当杯酒言欢。咱们就此别过……";
@@ -720,5 +720,5 @@ function showQRCode(){
 }
 // 多开教程
 function jumpToScanBoard(){
-	window.open("https://popzoo.github.io/zoo/manyOpen.html","_blank");
+	window.open(document.location.protocol+'//'+document.domain+'/manyOpen.html','_blank');
 }
