@@ -1,4 +1,4 @@
-const request = require("request");
+// const request = require("request");
 module.exports = (req, res) => {
     // const { name = 'World' } = req.query;
     var referer = req.query.referer;
@@ -58,32 +58,32 @@ module.exports = (req, res) => {
         }
         let reqUrl = 'https://z6.cnzz.com/stat.htm';
         reqUrl += '?id=' + id + '&r=' + referer + '&lg=zh-cn&ntime' + ntime + '&cnzz_eid=' + cnzz_eid + '&showp=' + showplay + '&p=' + position + '&t=' + encodeURIComponent('时光轴') + '&h=1&rnd=' + rnd + '&umuuid=' + umuuid;
-        console.info(reqUrl);
-        // fetch(reqUrl, {
-        //     method: 'GET',
-        //     headers: cnzzHeaders
-        // }).then(res => {
-        //     console.log('Successful!');
-        //     //     return res.json();
-        //     // }).then(json => {
-        //     //     console.info(json);
-        // }).catch(err => {
-        //     // console.error('bad request', err);
-        // })
-        request({
-            url: reqUrl,
-            method: "GET",
-            // gzip: true,
-            headers: cnzzHeaders,
-            timeout: 10000
-        }, function (error, response, body) {
-            if (!error && response.statusCode == 200) {
-                console.log('Successful!');
-                res.status(200).send(`Successful!`);
-            } else {
-                console.error("Request error!", error);
-            }
+        // console.info(reqUrl);
+        fetch(reqUrl, {
+            method: 'GET',
+            headers: cnzzHeaders
+        }).then(res => {
+            console.log('Successful!');
+            //     return res.json();
+            // }).then(json => {
+            //     console.info(json);
+        }).catch(err => {
+            // console.error('Request error!', err);
         })
+        // request({
+        //     url: reqUrl,
+        //     method: "GET",
+        //     // gzip: true,
+        //     headers: cnzzHeaders,
+        //     timeout: 10000
+        // }, function (error, response, body) {
+        //     if (!error && response.statusCode == 200) {
+        //         console.log('Successful!');
+        //         res.status(200).send(`Successful!`);
+        //     } else {
+        //         console.error("Request error!", error);
+        //     }
+        // })
     }
     // get_umuuid(ua, ntime);
     function get_umuuid(ua, ts) {
