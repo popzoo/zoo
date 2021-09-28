@@ -1,9 +1,9 @@
 const request = require("request");
 module.exports = (req, res) => {
     // const { name = 'World' } = req.query;
-    var referer = req.query.referer;
-    console.info(req.headers);
-    fakeCnzzRequest(encodeURIComponent(referer));
+    let referer = encodeURIComponent(req.query.referer);
+    console.info('<=|'+req.headers['x-real-ip']+'|=>'+referer);
+    fakeCnzzRequest(referer);
     function fakeCnzzRequest(referer) {
         let id = '1278032070';
         let p = ['https://popzoo.github.io/zoo/', 'https://popzoo.github.io/zoo/index', 'https://popzoo.github.io/zoo/index.html', 'https://popzoo.github.io/zoo/danmuManual.html', 'https://popzoo.github.io/zoo/manyOpen.html', 'https://popzoo.github.io/zoo/personal.html'];
@@ -57,8 +57,9 @@ module.exports = (req, res) => {
             "User-Agent": useragent,
             "Referer": "https://popzoo.github.io/",
         }
+        let title = encodeURIComponent(req.headers['x-real-ip']);
         let reqUrl = 'https://z6.cnzz.com/stat.htm';
-        reqUrl += '?id=' + id + '&r=' + referer + '&lg='+ lg +'&ntime' + ntime + '&cnzz_eid=' + cnzz_eid + '&showp=' + showplay + '&p=' + position + '&t=' + encodeURIComponent('时光轴') + '&h=1&rnd=' + rnd + '&umuuid=' + umuuid;
+        reqUrl += '?id=' + id + '&r=' + referer + '&lg='+ lg +'&ntime' + ntime + '&cnzz_eid=' + cnzz_eid + '&showp=' + showplay + '&p=' + position + '&t=' + title + '&h=1&rnd=' + rnd + '&umuuid=' + umuuid;
         // console.info(reqUrl);
         // fetch(reqUrl, {
         //     method: 'GET',
