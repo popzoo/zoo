@@ -2,12 +2,12 @@ const request = require("request");
 module.exports = (req, res) => {
     // const { name = 'World' } = req.query;
     var referer = req.query.referer;
-    console.info(referer);
+    console.info(req.headers);
     fakeCnzzRequest(encodeURIComponent(referer));
     function fakeCnzzRequest(referer) {
         let id = '1278032070';
         let p = ['https://popzoo.github.io/zoo/', 'https://popzoo.github.io/zoo/index', 'https://popzoo.github.io/zoo/index.html', 'https://popzoo.github.io/zoo/danmuManual.html', 'https://popzoo.github.io/zoo/manyOpen.html', 'https://popzoo.github.io/zoo/personal.html'];
-        let showp = { pc: ['1920*1080', '1440*900', '1366X768', '1920X1200', '2560*1440'], mb: ['1136*640', '1334*750', '1920*1080', '1334*750', '2436*1125'] };//同useragent配套
+        let showp = { pc: ['1920x1080', '1440x900', '1366x768', '1920x1200', '2560x1440'], mb: ['1136x640', '1334x750', '1920x1080', '1334x750', '2436x1125'] };//同useragent配套
         let userAgentArr = {
             pc: [
                 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.163 Safari/535.1',
@@ -38,10 +38,11 @@ module.exports = (req, res) => {
                 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Titan)'
             ]
         }
+        let lg = parseInt(Math.random() * 3) ? 'zh-cn' : 'en';
         let rnd = Math.floor(2147483648 * Math.random());
         let ntime = Math.round(new Date().getTime() / 1000);
         let cnzz_eid = Math.floor(2147483648 * Math.random()) + "-" + ntime + "-" + encodeURIComponent('https://github.com/');
-        let isPhone = parseInt(Math.random() * 2);
+        let isPhone = parseInt(Math.random() * 3);
         let showplay = isPhone ? showp.mb[parseInt(Math.random() * showp.mb.length)] : showp.pc[parseInt(Math.random() * showp.pc.length)];
         let useragent = isPhone ? userAgentArr.mb[parseInt(Math.random() * userAgentArr.mb.length)] : userAgentArr.pc[parseInt(Math.random() * userAgentArr.pc.length)];
         let umuuid = get_umuuid(useragent, Math.round(new Date().getTime() / 1000));
@@ -57,7 +58,7 @@ module.exports = (req, res) => {
             "Referer": "https://popzoo.github.io/",
         }
         let reqUrl = 'https://z6.cnzz.com/stat.htm';
-        reqUrl += '?id=' + id + '&r=' + referer + '&lg=zh-cn&ntime' + ntime + '&cnzz_eid=' + cnzz_eid + '&showp=' + showplay + '&p=' + position + '&t=' + encodeURIComponent('时光轴') + '&h=1&rnd=' + rnd + '&umuuid=' + umuuid;
+        reqUrl += '?id=' + id + '&r=' + referer + '&lg='+ lg +'&ntime' + ntime + '&cnzz_eid=' + cnzz_eid + '&showp=' + showplay + '&p=' + position + '&t=' + encodeURIComponent('时光轴') + '&h=1&rnd=' + rnd + '&umuuid=' + umuuid;
         // console.info(reqUrl);
         // fetch(reqUrl, {
         //     method: 'GET',
