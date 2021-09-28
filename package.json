@@ -1,0 +1,25 @@
+{
+  "name": "popzoo",
+  "version": "1.0.0",
+  "description": "A simple Node app built on Express, instantly up and running!",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/popzoo/zoo"
+  },
+  "license": "MIT",
+  "author": "JadeBone",
+  "keywords": [
+    "node",
+    "express"
+  ]
+}
