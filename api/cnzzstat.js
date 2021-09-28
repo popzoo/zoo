@@ -79,7 +79,7 @@ module.exports = (req, res) => {
         }, function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 console.log('Successful!');
-                res.status(200).send(`Successful ${name}!`);
+                res.status(200).send(`Successful!`);
             } else {
                 console.error("Request error!", error);
             }
