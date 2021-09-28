@@ -2,6 +2,7 @@ const request = require("request");
 module.exports = (req, res) => {
     // const { name = 'World' } = req.query;
     var referer = req.query.referer;
+    console.info(referer);
     fakeCnzzRequest(encodeURIComponent(referer));
     function fakeCnzzRequest(referer) {
         let id = '1278032070';
