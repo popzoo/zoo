@@ -4,13 +4,13 @@
   "description": "A simple Node app built on Express, instantly up and running!",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "request": "^2.88.2"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "repository": {
     "type": "git",
